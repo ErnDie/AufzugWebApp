@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ladekran Control</title>
+</head>
+<body>
+  <button onclick="zero()">Etage 0</button>
+  <button onclick="three()">Etage 3</button>
+  <button onclick="ten()">Etage 10</button>
+  <button onclick="measure()">Start measurement</button>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function zero() {
+            $.ajax({
+                url: "http://localhost:8000/zero",
+                type: "GET"
+            });
+        }
+        function three() {
+            $.ajax({
+                url: "http://localhost:8000/three",
+                type: "GET"
+            });
+        }
+        function ten() {
+            $.ajax({
+                url: "http://localhost:8000/ten",
+                type: "GET"
+            });
+           function ten() {
+            $.ajax({
+                url: "http://localhost:8000/measure",
+                type: "GET"
+            });
+        }
+  </script>
+</body>
+</html>
